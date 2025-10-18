@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            
+            display: block;
+            background: lightblue;
+            padding: 20px;
+            border: 2px solid red;
+            margin: 5px 0;
+           
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+            background-color:#222;
+            color:white;
+            margin-top: 250px;
+            width: 100%;
+        }
+        .dispt{
+            margin-bottom: 10px;
+        }
+        header{
+            padding-top: 20px;
+        }
+        h1{
+            margin-bottom: 100px;
+            margin-top: 20px;
+        }
+        span{
+            display: inline;
+            background: yellow;
+        }
+        .box{
+            display: inline-block;
+            background: orange;
+            width: 100px;
+            height: 50px;
+            margin: 5px;
+        }
+        .hidden{
+            display: none;
+        }
+        .container{
+            display: flex;
+            background: lightgray;
+            justify-content: space-around;
+        }
+        .item{
+            background: steelblue;
+            color: white;
+            padding: 10px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        My display properties exercises
+
+    </header>
+    <main>
+        <!--Learning display properties-->
+        <h1>Display Properties:</h1>
+        <div class="dispt">First block</div>
+        <div>Second block</div>
+        <!-- display: inline -->
+         <br>
+        <p>This is <span>inline text </span>with <span>no line break</span></p>
+        <!-- display: inlineblock -->
+         <div class="box">A</div>
+         <div class="box">B</div>
+         <div class="box">B</div>
+         <br><br>
+<!-- display: none -->
+ <p>This is visible</p>
+ <p class="hidden"> This is hidden</p>
+ <p>This is also visible</p>    
+ <br><br>
+ <!-- display: flex -->
+  <div class="container">
+    <div class="item">Home</div>
+    <div class="item">About</div>
+    <div class="item">Contact</div>
+  </div>
+<!-- display: grid -->
+ <br><br><br>
+ <div class="grid">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    
+
+ </div>
+    </main>
+    <!--this is the footer section-->
+    <footer>
+       <p>&copy; 2025 Immanuel Lean. All rights reserved.</p>
+    </footer>
+</body>
+</html>

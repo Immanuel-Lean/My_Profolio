@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Creation</title>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <headers> </headers>
+
+    <main>
+      <form action="submit_form.php" method="post">
+        <h2>Student Registration Form</h2>
+
+        <fieldset>
+          <legend>Student Registration Form<Form:post></Form:post></legend>
+
+          <label for="student_id">Student ID:</label>
+          <input
+            type="text"
+            id="student-id"
+            name="student-id"
+            placeholder="Enter your student ID"
+            required
+          />
+          <label for="fname">First Name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Please Enter your.."
+            required
+          />
+
+          <label class="lname">Last Name:</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Please enter.."
+            required
+          />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="Contact">Contact:</label>
+          <input
+            type="tel"
+            id="Contact"
+            name="contact"
+            placeholder="Enter your phone number"
+            required
+          />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="create a password"
+            required
+          />
+
+          <div class="inline-group">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" id="neuter" name="Gender" value="neuter" />
+            <label for="neuter">Neuter</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences for Futher Study</legend>
+
+          <label for="country">Country:</label>
+          <select name="country" id="country" required>
+            <option value="">--Select Country--</option>
+            <option value="liberia">Liberia</option>
+            <option value="ghana">Ghana</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="usa">USA</option>
+            <option value="none">None</option>
+          </select>
+
+          <label>DCIS Majors:</label>
+          <input
+            type="checkbox"
+            name="Major"
+            value="software engineering"
+          />Software Engineering
+          <input type="checkbox" name="Major" value="data science" />Data
+          Science
+          <input type="checkbox" name="Major" value="cyber security" />Cyber
+          security
+          <input type="checkbox" name="Major" value="networking" />networking
+          <input type="checkbox" name="Major" value="others" />Others
+
+          <div class="">
+            <label>Interest--(School Activities):</label>
+            <input type="checkbox" name="music" value="music" />Music
+            <input type="checkbox" name="reading" value="reading" />Reading
+            <input type="checkbox" name="singing" value="singing" />Singing
+            <input type="checkbox" name="sport" value="sport" />Sport
+            <input type="checkbox" name="others" value="others" />Others
+          </div>
+
+          <label for="message">About You</label>
+          <textarea
+            name="message"
+            id="message"
+            row="4"
+            placeholder="Write something about your self..."
+          ></textarea>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+      <div class="rod"></div>
+    </main>
+    <footer>
+      <p>&copy; 2025 Immanuel Lean. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

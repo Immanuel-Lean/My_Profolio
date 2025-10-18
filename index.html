@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Immanuel Lean - Junior Programmer</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./profolio.css">
+</head>
+<body>
+  <header>
+    <h1><i class="fa-solid fa-laptop-code"></i> Immanuel Lean</h1>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="menu-toggle" id="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <ul id="menu">
+        <li><a href="#about"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="dropdown">
+          <a href="#"><i class="fa-solid fa-briefcase"></i> Projects <i class="fa-solid fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="./mywebprofolio.html"><i class="fa-solid fa-globe"></i> Portfolio Website</a>
+            <a href="./form.html"><i class="fa-solid fa-file-lines"></i> Student Form</a>
+            <a href="./game.html"><i class="fa-solid fa-gamepad"></i> Mini Game</a>
+          </div>
+        </li>
+        <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Profile Section -->
+    <section class="profile">
+      <img src="profile.jpg" alt="Immanuel Lean">
+      <h2>Immanuel Lean</h2>
+      <p><strong>Junior Programmer</strong></p>
+      <p><i class="fa-solid fa-id-badge"></i> Student ID: 2025-88077</p>
+      <p><i class="fa-solid fa-phone"></i> +231 770 000 604</p>
+      <p><i class="fa-solid fa-envelope"></i> Immanuel@youtube.com</p>
+      <p><i class="fa-solid fa-cake-candles"></i> Date of Birth: 1996-05-06</p>
+
+      <a href="ImmanuelLeanCV.pdf" class="cv-button" download>
+        <i class="fa-solid fa-download"></i> Download CV
+      </a>
+    </section>
+
+    <!-- About + Projects + Contact -->
+    <section class="content">
+      <h2 id="about"><i class="fa-solid fa-user"></i> About Me</h2>
+      <p>I am a junior programmer passionate about web development. I love learning HTML, CSS, and JavaScript and building clean, responsive websites that work beautifully on any device.</p>
+
+      <h2 id="projects"><i class="fa-solid fa-briefcase"></i> My Projects</h2>
+      <ul>
+        <li><i class="fa-solid fa-globe"></i> Portfolio Website - My personal web profile</li>
+        <li><i class="fa-solid fa-file-lines"></i> Student Form - Registration project</li>
+        <li><i class="fa-solid fa-gamepad"></i> Mini Game - Simple JS fun project</li>
+      </ul>
+
+      <h2 id="contact"><i class="fa-solid fa-address-book"></i> Contact</h2>
+      <p><i class="fa-solid fa-envelope"></i> Immanuel@youtube.com</p>
+      <p><i class="fa-solid fa-phone"></i> +231 770 000 604</p>
+    </section>
+  </main>
+
+  <footer>&copy; 2025 Immanuel Lean — <i class="fa-solid fa-code"></i> Junior Programmer</footer>
+
+  <script src="profolio.js"></script>
+</body>
+</html>
